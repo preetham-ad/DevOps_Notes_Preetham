@@ -2,7 +2,7 @@
 
 ## What Are GitHub Actions Runners?
 
-**GitHub Actions Runners** are the agents that execute the tasks defined in your GitHub Actions workflows. They perform actions like running tests, building code, or deploying applications based on the instructions provided in your workflow files.
+**GitHub Actions Runners** are the agents(Virtual Machines) that execute the tasks defined in your GitHub Actions workflows. They perform actions like running tests, building code, or deploying applications based on the instructions provided in your workflow files.
 
 ## Types of GitHub Actions Runners
 
