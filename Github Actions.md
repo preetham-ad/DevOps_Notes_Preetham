@@ -2,6 +2,16 @@
 
 **GitHub Actions** is a feature of GitHub that automates various tasks within your software development workflow. It helps you set up processes that run automatically when specific events occur in your GitHub repository.
 
+## Why .github/workflows/ is Mandatory
+**Standard Location**:
+
+GitHub Actions Requirement: GitHub expects all workflow files to be stored in a specific directory structure within your repository. The standard directory is .github/workflows/.
+Purpose: This convention ensures that GitHub Actions can find and execute the workflow files automatically.
+**Automatic Detection**:
+
+How It Works: GitHub Actions scans the .github/workflows/ directory for YAML files that define workflows. Workflows are then triggered based on events such as pushes or pull requests.
+Example Path: If you have a file named main.yml in the .github/workflows/ directory, GitHub will recognize it as a workflow file.
+
 ## GitHub Actions for CI/CD
 
 GitHub Actions is a powerful tool for automating Continuous Integration (CI) and Continuous Deployment (CD) processes in your projects. Here’s how it enhances your CI/CD pipeline:
