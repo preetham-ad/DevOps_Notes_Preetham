@@ -39,9 +39,10 @@
 ## 4. Docker Container Image
 
 **Docker Container Image**:
-- **Definition:** A Docker container image is a compact and efficient version of that suitcase, with everything neatly organized and ready to go.
 
-- **Simple Explanation:** Think of the Docker container image as a pre-packed suitcase that’s small and easy to carry. It includes everything needed for the trip (application), like clothes (code), personal items (runtime and system tools), and travel documents (system libraries and settings). When you unpack it, everything is in its place and ready to use immediately, without any extra preparation.
+- **Docker Container:** The live, running version of your application. It’s where the application does its work.
+  
+- **Docker Container Image:** The blueprint or template used to create containers. It’s a snapshot that includes everything needed to run the application.
 
 ---
 
