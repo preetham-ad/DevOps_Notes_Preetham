@@ -52,6 +52,9 @@ Performance: Larger images can be slower to deploy and transfer.
 
 ## Multi-Stage Docker Build
 A multi-stage Docker build allows you to use multiple FROM statements in a single Dockerfile. Each FROM statement begins a new stage in the build process. This approach enables you to create different stages for building and running your application, which can help in reducing the final image size and improving security.
+# FROM statements in MSDB 
+If you are using multi-stage builds, each FROM statement denotes the beginning of a new stage. You can copy artifacts from one stage to another, allowing you to use a lightweight image for the final stage and a more feature-rich image for the build stage.
+
 ```
 # Build Stage
 FROM node:14 AS build
