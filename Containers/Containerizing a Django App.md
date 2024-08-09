@@ -19,8 +19,9 @@ pip install django
 
 Create the Project:
 
-```bash
+bash
 Copy code
+```
 django-admin startproject myproject
 cd myproject
 ```
@@ -28,8 +29,9 @@ cd myproject
 
 Create an App:
 
-```bash
+bash
 Copy code
+```
 python manage.py startapp myapp
 ```
 **d. Configure the App**
@@ -41,11 +43,13 @@ Create views, configure URLs, and apply migrations.
 
 Run the Server:
 
-```bash
+bash
 Copy code
-python manage.py runserver
-Visit http://127.0.0.1:8000/ in your browser to see your Django application running
 ```
+python manage.py runserver
+```
+Visit http://127.0.0.1:8000/ in your browser to see your Django application running
+
 ### 1. **Development**
 
 - **Python/Django**: Develop and test your Django app on your local machine.
