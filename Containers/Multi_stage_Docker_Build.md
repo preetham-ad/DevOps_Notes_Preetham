@@ -87,6 +87,9 @@ Simplify Image Management:
 The final image is cleaner and easier to manage because it only contains what's necessary to run the application.
 ## Summary
 Docker Container: Ensures consistency across different environments by bundling everything needed to run an application.
+
 Build Stage: Prepares the application (like cooking the ingredients).
+
 Runtime Stage: Runs the application (like serving the meal).
+
 Multi-Stage Build: Uses separate stages to build and run the application, resulting in smaller, more secure, and efficient images.
