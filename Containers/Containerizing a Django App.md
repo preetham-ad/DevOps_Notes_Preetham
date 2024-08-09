@@ -6,6 +6,46 @@ Containerizing a Django app involves several steps to ensure that the applicatio
 
 ## Basic Application Workflow
 
+### 1. Create a Django Application
+
+**a. Install Django**
+
+First, you need to set up your environment. Install Python and Django:
+
+```bash
+pip install django
+```
+**b. Create a New Django Project**
+
+Create the Project:
+
+```bash
+Copy code
+django-admin startproject myproject
+cd myproject
+```
+**c. Create a Django App**
+
+Create an App:
+
+```bash
+Copy code
+python manage.py startapp myapp
+```
+**d. Configure the App**
+
+Add your app to INSTALLED_APPS in myproject/settings.py.
+Create views, configure URLs, and apply migrations.
+
+**e. Run the Development Server**
+
+Run the Server:
+
+```bash
+Copy code
+python manage.py runserver
+Visit http://127.0.0.1:8000/ in your browser to see your Django application running
+```
 ### 1. **Development**
 
 - **Python/Django**: Develop and test your Django app on your local machine.
