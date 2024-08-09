@@ -1,5 +1,3 @@
-# Understanding Docker Multi-Stage Builds
-
 ## Question
 
 In Docker, the concept of which stage is considered the "final" image is tied to the process of building and tagging the image. Here’s how Docker handles this:
@@ -58,12 +56,12 @@ Command: ```FROM node:14-slim```
 Description: This is a new stage that starts from a smaller, slimmer base image. It copies the build artifacts from the build stage.
 Final Image: This is the stage from which the final Docker image is created. The COPY --from=build instructions pull in only the necessary files from the build stage.
 
-# How Docker Determines the Final Image:
+## How Docker Determines the Final Image:
 **Execution Order**: Docker processes the stages in order. The last FROM statement (FROM node:14-slim) defines the base for the final image.
 **Tagging**: When you run docker build -t myapp:multi ., Docker builds the image based on the instructions from the final stage (node:14-slim). The result is tagged as myapp:multi.
 **Intermediate Stages**: The intermediate stages (like the build stage) are used during the build process but are not part of the final image unless specifically tagged.
 
-# How to Check the Final Image
+## How to Check the Final Image
 **List Docker Images:**
 
 ```bash
