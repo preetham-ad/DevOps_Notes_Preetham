@@ -76,14 +76,13 @@ CMD ["node", "dist/server.js"]
 ## Benefits of Multi-Stage Builds:
 
 **Reduce Image Size**:
-
 Build Stage: Includes tools needed to build the application.
 Runtime Stage: Only includes the final application and runtime dependencies. This results in a smaller, leaner image.
+
 **Improve Security**:
-
 The final image does not include build tools or unnecessary files, reducing potential security risks.
-**Simplify Image Management**:
 
+**Simplify Image Management**:
 The final image is cleaner and easier to manage because it only contains what's necessary to run the application.
 ## Summary
 **Docker Container**: Ensures consistency across different environments by bundling everything needed to run an application.
