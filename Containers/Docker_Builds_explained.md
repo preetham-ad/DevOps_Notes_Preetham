@@ -51,7 +51,7 @@ Security: Extra tools can be potential security risks.
 Performance: Larger images can be slower to deploy and transfer.
 
 ## Multi-Stage Docker Build
-A multi-stage Docker build separates the build process from the runtime environment:
+A multi-stage Docker build allows you to use multiple FROM statements in a single Dockerfile. Each FROM statement begins a new stage in the build process. This approach enables you to create different stages for building and running your application, which can help in reducing the final image size and improving security.
 ```
 # Build Stage
 FROM node:14 AS build
