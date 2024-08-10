@@ -1,4 +1,4 @@
-# Container Data Management and Communication
+## Container Data Management and Communication
 
 Containers offer numerous benefits, but they also come with challenges, particularly around data persistence, inter-container communication, and file access. This document addresses these issues and explains how a front-end and back-end application with containers typically works.
 
