@@ -56,7 +56,7 @@ Stopping a Container:
 ```bash
 copy code
 docker stop <container_id_or_name>```
-
+```
 Removing a Container:
 ```bash
 copy code
