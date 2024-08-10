@@ -47,12 +47,11 @@ Multiple Container Access: Easily share data between multiple containers using t
 
 ## Deleting a Docker Volume
 
-- **1.Stop and Remove Containers**:
+- 1.Stop and Remove Containers:
 
 Before you can delete a Docker volume, you need to ensure that no container is using it. Docker does not allow you to delete a volume that is currently in use by a container. This means you need to stop and remove any containers that are using the volume.
 
 Stopping a Container:
-
 ```bash
 copy code
 docker stop <container_id_or_name>```
@@ -60,15 +59,17 @@ docker stop <container_id_or_name>```
 Removing a Container:
 ```bash
 copy code
-docker rm <container_id_or_name>```
+docker rm <container_id_or_name>
+```
 This removes the container from Docker, but does not delete the volume.
 
-- 2.**Deleting the Volume**:
+- 2.Deleting the Volume:
 
 Once the container is stopped and removed, you can safely delete the volume.
 
 List Volumes:
-```docker volume ls```
+```docker volume ls
+```
 
 Remove a Volume:
 ```bash
