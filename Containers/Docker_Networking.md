@@ -4,6 +4,8 @@ Docker provides several networking options to manage how containers communicate 
 
 ## Key Networking Concepts
 
+In Docker, an "out of the box" network typically refers to the default network configurations and types that Docker provides when you start using it without custom configuration.
+
 1. **Bridge Network**: 
    - This is the default network type. Docker creates a virtual network bridge (`docker0`) on the host. Containers connected to this bridge can communicate with each other and the host. By default, they are isolated from external networks unless port forwarding is configured.
 
