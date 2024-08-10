@@ -66,10 +66,11 @@ In Container1 (running app1), you can access Container2 (running app2) using:
 
 ## Why This Works:
 
-**Network Configuration**: By placing both containers on the same custom bridge network, Docker manages the network routing and DNS resolution for you.
-**Service Discovery**: Docker provides automatic DNS resolution for container names within the same network, allowing containers to find each other using their names.
+- **Network Configuration**: By placing both containers on the same custom bridge network, Docker manages the network routing and DNS resolution for you.
+- **Service Discovery**: Docker provides automatic DNS resolution for container names within the same network, allowing containers to find each other using their names.
 Summary
-**Default Network (docker0)**: Allows all containers on the same host to communicate with each other and the host. This may not be secure if you need isolation.
-**Custom Bridge Network**: Provides better security and isolation while still allowing containers to communicate with each other if they are on the same network.
-**Container Communication**: Within the same custom network, containers can use names to communicate with each other, simplifying service discovery and interactions.
+- **Default Network (docker0)**: Allows all containers on the same host to communicate with each other and the host. This may not be secure if you need isolation.
+- **Custom Bridge Network**: Provides better security and isolation while still allowing containers to communicate with each other if they are on the same network.
+- **Container Communication**: Within the same custom network, containers can use names to communicate with each other, simplifying service discovery and interactions.
+  
 In summary, Docker networking allows you to control how containers communicate, both with each other and with external systems. Using custom networks, you can enforce isolation and security while enabling necessary communication between containers.
