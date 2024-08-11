@@ -4,7 +4,8 @@
 
 **Server**:
 - **Definition:** A server is a powerful computer that provides services or resources to other computers over a network.
-- **Simple Explanation:** Imagine a big, strong computer that helps other computers by sharing things like files, websites, or applications. It’s like a librarian who manages and provides access to a large library of books.
+- **Simple Explanation:** 
+When you visit Amazon, a web server processes your request, retrieves the website's content, and sends it to your browser for display. The database server provides product information, while the application server handles actions like adding items to your cart and processing payments. These servers work together to ensure a smooth shopping experience.
 
 ---
 
