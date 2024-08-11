@@ -5,13 +5,13 @@
 ## Why .github/workflows/ is Mandatory
 **Standard Location**:
 
-- GitHub Actions Requirement: GitHub expects all workflow files to be stored in a specific directory structure within your repository. The standard directory is .github/workflows/.
-- Purpose: This convention ensures that GitHub Actions can find and execute the workflow files automatically.
+- **GitHub Actions Requirement**: GitHub expects all workflow files to be stored in a specific directory structure within your repository. The standard directory is .github/workflows/.
+- **Purpose**: This convention ensures that GitHub Actions can find and execute the workflow files automatically.
 ##
 **Automatic Detection**:
 
-- *How It Works*: GitHub Actions scans the .github/workflows/ directory for YAML files that define workflows. Workflows are then triggered based on events such as pushes or pull requests.
-- *Example Path*: If you have a file named main.yml in the .github/workflows/ directory, GitHub will recognize it as a workflow file.
+- **How It Works**: GitHub Actions scans the .github/workflows/ directory for YAML files that define workflows. Workflows are then triggered based on events such as pushes or pull requests.
+- **Example Path**: If you have a file named main.yml in the .github/workflows/ directory, GitHub will recognize it as a workflow file.
 
 ## GitHub Actions for CI/CD
 
