@@ -285,21 +285,27 @@ Distro-less images are ideal for creating lightweight, secure containers where a
 ## 11.what are the real-time challenges in Docker?
 Here are some real-time challenges in Docker:
 
-Single Point of Failure: Docker operates with a single daemon process, which can be a single point of failure. Alternatives like Podman offer a daemonless architecture to mitigate this risk.
+- Single Point of Failure:
+Docker operates with a single daemon process, which can be a single point of failure. Alternatives like Podman offer a daemonless architecture to mitigate this risk.
 
-Security Risks with Root Privileges: The Docker daemon runs as the root user, which can pose security risks. If compromised, it can potentially affect other applications or containers on the host. Using tools that minimize root access, or applying best practices for security, can help mitigate this issue.
+- Security Risks with Root Privileges:
+  The Docker daemon runs as the root user, which can pose security risks. If compromised, it can potentially affect other applications or containers on the host. Using tools that minimize root access, or applying best practices for security, can help mitigate this issue.
 
-Resource Constraints: Running too many containers on a single host can lead to resource constraints, resulting in performance degradation or crashes. Proper resource management and monitoring are crucial to ensure stable performance.
+- Resource Constraints:
+  Running too many containers on a single host can lead to resource constraints, resulting in performance degradation or crashes. Proper resource management and monitoring are crucial to ensure stable performance.
 
 ## 12.what steps would you take to secure containers?
 
 To secure containers, you can take the following steps:
 
-Use Minimal Base Images: Employ distroless images or those with minimal packages in your final stage of a multi-stage build. This reduces the attack surface by minimizing the number of potential vulnerabilities and security issues.
+- Use Minimal Base Images:
+  Employ distroless images or those with minimal packages in your final stage of a multi-stage build. This reduces the attack surface by minimizing the number of potential vulnerabilities and security issues.
 
-Configure Networking Properly: Ensure proper network configuration to prevent security issues. Set up custom bridge networks if needed to isolate containers and limit their communication to only what is necessary.
+- Configure Networking Properly:
+  Ensure proper network configuration to prevent security issues. Set up custom bridge networks if needed to isolate containers and limit their communication to only what is necessary.
 
-Scan Container Images: Use security scanning tools to regularly check your container images for vulnerabilities and compliance issues. Tools like Clair, Trivy, or Anchore can help identify and mitigate potential risks.
+- Scan Container Images:
+  Use security scanning tools to regularly check your container images for vulnerabilities and compliance issues. Tools like Clair, Trivy, or Anchore can help identify and mitigate potential risks.
 
 
 
