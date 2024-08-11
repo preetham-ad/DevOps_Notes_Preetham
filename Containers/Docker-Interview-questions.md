@@ -240,11 +240,11 @@ Start each container and attach it to the custom bridge network. This network is
 Start the Login Container on isolated_network:
 ```bash
 docker run -d --name login_app --network isolated_network my_login_image
-
+```
 Start the Payments Container on isolated_network:
 ```bash
 docker run -d --name payments_app --network isolated_network my_payments_image
-
+```
 Both containers are now on the isolated_network bridge network. They can communicate with each other if needed, but they are isolated from containers on other networks.
 
 
