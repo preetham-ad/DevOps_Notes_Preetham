@@ -1,8 +1,17 @@
 # Docker Terminology Simplified
 
+## Docker Engine:
+- What It Is: The core software that makes Docker work. It handles creating, running, and managing containers.
+### Components: Docker Engine consists of several key parts, including:
+- **Docker Daemon (dockerd)**: The background service that manages Docker containers, images, networks, and volumes.
+- **Docker CLI (docker)**: The command-line interface used to interact with the Docker Daemon.
+- **REST API**: An API that allows external programs to communicate with the Docker Daemon.
+
 ## Docker Daemon
-- **Official Definition**: The Docker daemon (`dockerd`) is a background process that manages Docker containers, images, networks, and volumes.
-- **Simple Definition**: The Docker daemon is like a manager that runs in the background. It takes care of creating, running, and managing Docker containers and other Docker tasks.
+- **What It Is**: The Docker Daemon is the background process (dockerd) that listens for Docker API requests and manages Docker objects such as containers, images, networks, and volumes.
+- **Role**: The Daemon is responsible for carrying out the instructions given through the Docker CLI or REST API, such as building images, starting or stopping containers, and handling networking.
+
+- **Docker Engine is the entire system that includes the Docker Daemon, CLI, and other tools, while the Docker Daemon is just one part of the Docker Engine, specifically the background service that does the heavy lifting**.
 
 ## Docker Client
 - **Official Definition**: The Docker client (`docker`) is the command-line tool that lets users interact with the Docker daemon. It communicates with the daemon to send commands.
