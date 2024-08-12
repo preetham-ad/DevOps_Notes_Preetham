@@ -21,11 +21,11 @@ docker run -v /my/local/folder:/container/folder myapp
 This command connects /my/local/folder on your computer to /container/folder inside the container. Changes in one location appear in the other.
 
 ## 2. Docker Volumes
-Simple Definition
-Volumes: These are storage areas managed by Docker. They exist independently of any container and can be used by multiple containers. Volumes keep their data even if you stop or remove the container.
-What It Solves
-Data Persistence: Volumes ensure that data remains safe and accessible even if the container is stopped or removed. This is crucial for storing things like database information.
-Sharing Data: Volumes can be shared between different containers. This is useful for scenarios where multiple containers need to access the same data or configuration files.
+### Simple Definition
+- Volumes: These are storage areas managed by Docker. They exist independently of any container and can be used by multiple containers. Volumes keep their data even if you stop or remove the container.
+### What It Solves
+- Data Persistence: Volumes ensure that data remains safe and accessible even if the container is stopped or removed. This is crucial for storing things like database information.
+- Sharing Data: Volumes can be shared between different containers. This is useful for scenarios where multiple containers need to access the same data or configuration files.
 
 ## How to Create and Attach Volumes
 Create a Volume:
@@ -53,12 +53,10 @@ Before you can delete a Docker volume, you need to ensure that no container is u
 
 - Stopping a Container:
 ```bash
-copy code
-docker stop <container_id_or_name>```
+docker stop <container_id_or_name>
 ```
 - Removing a Container:
 ```bash
-copy code
 docker rm <container_id_or_name>
 ```
 This removes the container from Docker, but does not delete the volume.
@@ -69,13 +67,11 @@ Once the container is stopped and removed, you can safely delete the volume.
 
 List Volumes:
 ```bash
-copy code
 docker volume ls
 ```
 
 Remove a Volume:
 ```bash
-Copy code
 docker volume rm <volume_name>
 ```
 
