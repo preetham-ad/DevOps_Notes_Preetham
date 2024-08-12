@@ -46,9 +46,9 @@ CMD ["node", "dist/server.js"]
 ```
 ## Problems with Single-Stage Build:
 
-Image Size: Includes build tools and dependencies not needed at runtime.
-Security: Extra tools can be potential security risks.
-Performance: Larger images can be slower to deploy and transfer.
+- Image Size: Includes build tools and dependencies not needed at runtime.
+- Security: Extra tools can be potential security risks.
+- Performance: Larger images can be slower to deploy and transfer.
 
 ## Multi-Stage Docker Build
 A multi-stage Docker build allows you to use multiple FROM statements in a single Dockerfile. Each FROM statement begins a new stage in the build process. This approach enables you to create different stages for building and running your application, which can help in reducing the final image size and improving security.
@@ -82,8 +82,8 @@ CMD ["node", "dist/server.js"]
 ## Benefits of Multi-Stage Builds:
 
 **Reduce Image Size**:
-Build Stage: Includes tools needed to build the application.
-Runtime Stage: Only includes the final application and runtime dependencies. This results in a smaller, leaner image.
+- Build Stage: Includes tools needed to build the application.
+- Runtime Stage: Only includes the final application and runtime dependencies. This results in a smaller, leaner image.
 
 **Improve Security**:
 The final image does not include build tools or unnecessary files, reducing potential security risks.
