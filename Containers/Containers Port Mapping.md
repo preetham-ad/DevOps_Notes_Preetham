@@ -48,4 +48,4 @@ This should display your Django application if everything is set up correctly.
 - Port Mapping: Ensure you’re using the correct Docker run command with port mapping (-p 80:8000).
 - Security Groups: Verify that your EC2 instance’s security group permits traffic on the mapped port (e.g., port 80).
 - Container Check: Confirm that the Docker container is running and accessible.
-css
+
