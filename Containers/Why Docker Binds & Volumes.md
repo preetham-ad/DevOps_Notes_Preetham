@@ -28,7 +28,7 @@ In this example, logs stored in /container/logs inside the container will be sav
 
 ### Explanation:
 
-- **Container IsolationV: Containers are isolated from each other. A backend container should not directly write to the filesystem of a front-end container. Instead, they should communicate through well-defined interfaces.
+- **Container Isolation**: Containers are isolated from each other. A backend container should not directly write to the filesystem of a front-end container. Instead, they should communicate through well-defined interfaces.
 Data Sharing Solution:
 - **Shared Volumes**: Use Docker volumes to share data between containers. Both containers can mount the same volume, allowing them to read from and write to a common storage area.
 - **Service Communication**: Containers should communicate over networks rather than writing directly to each other's file systems. For example, the backend container can expose APIs, and the front-end container can make HTTP requests to these APIs.
