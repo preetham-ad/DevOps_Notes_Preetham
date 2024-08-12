@@ -2,7 +2,9 @@
 
 ## Docker Engine:
 - What It Is: The core software that makes Docker work. It handles creating, running, and managing containers.
-### Components: Docker Engine consists of several key parts, including:
+### Components:
+Docker Engine consists of several key parts, including:
+
 - **Docker Daemon (dockerd)**: The background service that manages Docker containers, images, networks, and volumes.
 - **Docker CLI (docker)**: The command-line interface used to interact with the Docker Daemon.
 - **REST API**: An API that allows external programs to communicate with the Docker Daemon.
