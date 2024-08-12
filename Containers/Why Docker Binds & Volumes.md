@@ -12,7 +12,8 @@ Containers offer numerous benefits, but they also come with challenges, particul
 - **Ephemeral Storage**: By default, containers use ephemeral storage, meaning any data stored inside a container is lost when the container is stopped or deleted.
 
 **Data Persistence Solution**:
-- **Volumes**: To ensure data persistence, use Docker volumes or bind mounts. Volumes are managed by Docker and can be shared among multiple containers. Bind mounts link directories or files from the host file system into the container. This way, the data is stored outside the container and persists even if the container is removed.
+- **Volumes**: To ensure data persistence, use Docker volumes or bind mounts. Volumes are managed by Docker and can be shared among multiple containers.
+-  **Bind mounts**: link directories or files from the host file system into the container. This way, the data is stored outside the container and persists even if the container is removed.
 
 **Example**:
 
