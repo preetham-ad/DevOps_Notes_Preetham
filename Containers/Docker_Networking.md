@@ -2,7 +2,7 @@
 
 Docker provides several networking options to manage how containers communicate with each other and with the outside world. These options help you control visibility, security, and network configuration.
 
-**Ethernet is a technology used to connect computers and other devices in a local network (like in your home or office) using cables. It allows these devices to communicate with each other and share data efficiently.**
+**Ethernet is the most common technology used for connecting devices in a local area network (LAN) using cables. It allows these devices to communicate with each other and share data efficiently.**
 
 ## Key Networking Concepts
 
