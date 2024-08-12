@@ -41,9 +41,9 @@ docker run -v myvolume:/container/folder myapp
 This command attaches the myvolume volume to /container/folder in the container. Data stored in this folder is saved in myvolume.
 
 ## Benefits of Using Volumes
-Data Reliability: Your data stays intact even if the container is deleted or replaced.
-Ease of Backup and Restore: Volumes can be backed up and restored independently from the container.
-Multiple Container Access: Easily share data between multiple containers using the same volume.
+- **Data Reliability**: Your data stays intact even if the container is deleted or replaced.
+- **Ease of Backup and Restore**: Volumes can be backed up and restored independently from the container.
+- **Multiple Container Access**: Easily share data between multiple containers using the same volume.
 
 ## Deleting a Docker Volume
 
