@@ -117,21 +117,18 @@ EXPOSE 8000
 Generate a requirements.txt file with all dependencies:
 
 ```bash
-Copy code
 pip freeze > requirements.txt
 ```
 ## 3. Build the Docker Image
 Build your Docker image using the Dockerfile:
 
 ```bash
-Copy code
 docker build -t my-django-app .
 ```
 ## 4. Run the Docker Container
 Run the container and map port 8000 from the container to your local machine:
 
 ```bash
-Copy code
 docker run -d -p 8000:8000 my-django-app
 ```
 ## 5. Access the Application
