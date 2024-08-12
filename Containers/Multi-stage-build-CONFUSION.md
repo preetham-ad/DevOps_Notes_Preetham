@@ -31,10 +31,10 @@ CMD ["node", "dist/server.js"]
 ```
 ## What Happens:
 
-**Base Image**: node:14 is used as the base image. This image includes Node.js and npm.
-**Dependencies**: npm install adds all dependencies, including build tools.
-**Code and Build**: Copies the source code and builds it. The build tools and intermediate files are still part of the image.
-**Final Image**: Includes Node.js, all dependencies, the source code, build tools, and the built application. This results in a larger image (e.g., 1 GB).
+- **Base Image**: node:14 is used as the base image. This image includes Node.js and npm.
+- **Dependencies**: npm install adds all dependencies, including build tools.
+- **Code and Build**: Copies the source code and builds it. The build tools and intermediate files are still part of the image.
+- **Final Image**: Includes Node.js, all dependencies, the source code, build tools, and the built application. This results in a larger image (e.g., 1 GB).
 
 ## Issues:
 The final image contains everything needed for both building and running the application, including:
@@ -70,23 +70,23 @@ CMD ["node", "dist/server.js"]
 ## What Happens:
 
 **Build Stage**:
-Uses node:14 image to compile the application.
-Installs all build tools and dependencies.
-Copies the source code and builds the application.
-This stage is not included in the final image; it's just used to prepare the build artifacts.
+- Uses node:14 image to compile the application.
+- Installs all build tools and dependencies.
+- Copies the source code and builds the application.
+- This stage is not included in the final image; it's just used to prepare the build artifacts.
 
 **Runtime Stage**:
-Uses node:14-slim, a smaller base image without build tools.
-Copies only the necessary artifacts from the build stage:
-Built application (/app/dist)
-Production dependencies
-Installs only production dependencies (no development dependencies or build tools).
+- Uses node:14-slim, a smaller base image without build tools.
+- Copies only the necessary artifacts from the build stage:
+- Built application (/app/dist)
+- Production dependencies
+- Installs only production dependencies (no development dependencies or build tools).
 
 **Why the Image is Reduced**:
-Lighter Base Image: The runtime stage uses a slimmer base image (node:14-slim) that doesn’t include build tools or unnecessary components.
-Selective Copy: Only the essential files (compiled code and runtime dependencies) are copied from the build stage.
-No Build Tools: The final image doesn’t include any build tools or intermediate files, just the runtime environment and the application.
+- Lighter Base Image: The runtime stage uses a slimmer base image (node:14-slim) that doesn’t include build tools or unnecessary components.
+- Selective Copy: Only the essential files (compiled code and runtime dependencies) are copied from the build stage.
+- No Build Tools: The final image doesn’t include any build tools or intermediate files, just the runtime environment and the application.
 
 ## Example Comparison:
-**Regular Dockerfile**: The final image might be around 1 GB due to the inclusion of all build tools, source code, and the built application.
-**Multi-Stage Dockerfile**: The final image might be reduced to around 200 MB because it only contains the built application and production dependencies, with a much smaller base image.
+- **Regular Dockerfile**: The final image might be around 1 GB due to the inclusion of all build tools, source code, and the built application.
+- **Multi-Stage Dockerfile**: The final image might be reduced to around 200 MB because it only contains the built application and production dependencies, with a much smaller base image.
