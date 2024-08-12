@@ -23,11 +23,10 @@ This command shows the list of running containers. Ensure that your Django conta
 When running your Docker container, you need to map the internal port (where Django is running) to an external port on your EC2 instance. For example:
 
 ```bash
-Copy code
 docker run -d -p 80:8000 my-django-app
 ```
--d: Runs the container in detached mode (background).
--p 80:8000: Maps port 80 on the EC2 instance to port 8000 inside the Docker container.
+- d: Runs the container in detached mode (background).
+- p 80:8000: Maps port 80 on the EC2 instance to port 8000 inside the Docker container.
 This means that requests to port 80 of your EC2 instance will be forwarded to port 8000 of your container.
 
 ## 3. Check EC2 Security Group Settings
@@ -46,7 +45,7 @@ Navigate to http://<EC2_PUBLIC_IP>.
 This should display your Django application if everything is set up correctly.
 
 ## Summary
-Port Mapping: Ensure you’re using the correct Docker run command with port mapping (-p 80:8000).
-Security Groups: Verify that your EC2 instance’s security group permits traffic on the mapped port (e.g., port 80).
-Container Check: Confirm that the Docker container is running and accessible.
+- Port Mapping: Ensure you’re using the correct Docker run command with port mapping (-p 80:8000).
+- Security Groups: Verify that your EC2 instance’s security group permits traffic on the mapped port (e.g., port 80).
+- Container Check: Confirm that the Docker container is running and accessible.
 css
