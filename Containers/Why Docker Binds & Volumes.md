@@ -23,16 +23,15 @@ docker run -v /host/logs:/container/logs myapp
 In this example, logs stored in /container/logs inside the container will be saved to /host/logs on the host, ensuring persistence.
 
 ## 2. Inter-Container Communication
-Problem: Backend Container Writes to Front-End Container
-Scenario: A backend container writes files or data to the front-end container. If the backend container goes down, the front-end container might be affected.
+### Problem: Backend Container Writes to Front-End Container
+- **Scenario**: A backend container writes files or data to the front-end container. If the backend container goes down, the front-end container might be affected.
 
-Explanation:
+### Explanation:
 
-Container Isolation: Containers are isolated from each other. A backend container should not directly write to the filesystem of a front-end container. Instead, they should communicate through well-defined interfaces.
+- **Container IsolationV: Containers are isolated from each other. A backend container should not directly write to the filesystem of a front-end container. Instead, they should communicate through well-defined interfaces.
 Data Sharing Solution:
-
-Shared Volumes: Use Docker volumes to share data between containers. Both containers can mount the same volume, allowing them to read from and write to a common storage area.
-Service Communication: Containers should communicate over networks rather than writing directly to each other's file systems. For example, the backend container can expose APIs, and the front-end container can make HTTP requests to these APIs.
+- **Shared Volumes**: Use Docker volumes to share data between containers. Both containers can mount the same volume, allowing them to read from and write to a common storage area.
+- **Service Communication**: Containers should communicate over networks rather than writing directly to each other's file systems. For example, the backend container can expose APIs, and the front-end container can make HTTP requests to these APIs.
 ```bash
 docker run -v shared-data:/data backend-container
 docker run -v shared-data:/data frontend-container
@@ -40,13 +39,13 @@ docker run -v shared-data:/data frontend-container
 Here, shared-data is a volume accessible by both backend and front-end containers.
 
 ## 3. Container Access to Host Files
-Problem: Container Wants to Read Files on Host System
-Scenario: A container needs to access or read files from the host system, but containers are isolated from the host file system by default.
+### Problem: Container Wants to Read Files on Host System
+- **Scenario**: A container needs to access or read files from the host system, but containers are isolated from the host file system by default.
 
-Explanation:
+## Explanation:
 
-File Access Solution:
-Bind Mounts: Use bind mounts to give a container access to specific directories or files on the host file system.
+### File Access Solution:
+- **Bind Mounts**: Use bind mounts to give a container access to specific directories or files on the host file system.
 
 Example:
 
