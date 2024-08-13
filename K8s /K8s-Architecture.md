@@ -7,9 +7,17 @@ In Kubernetes, a Pod is the smallest deployable unit that groups one or more con
 
 This setup ensures that containers that need to work closely together are placed on the same host, which simplifies their communication and data sharing.
 
-# Understanding Kubernetes Architecture Compared to Docker
+## Understanding Kubernetes Architecture Compared to Docker
 
 When running a container, you need a container runtime. In Docker, this runtime is referred to as Docker shim.
+
+In Kubernetes, the architecture is slightly different:
+
+- **Master Node and Worker Nodes:** Kubernetes uses a master node (or control plane) and worker nodes. The control plane manages the cluster and orchestrates the deployment of Pods on the worker nodes.
+
+- **Deployment of Pods:** When you deploy a Pod in Kubernetes, it gets scheduled to a specific worker node. The master node (control plane) handles this scheduling.
+
+- **Container Runtime:** Kubernetes provides container runtimes such as `containerd` and `cri-o` to manage container execution. These runtimes handle the low-level operations required to run containers.
 
 ## Kubernetes Architecture
 
