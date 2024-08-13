@@ -26,17 +26,8 @@ When you deploy a Pod on a specific worker node in K8s, several components are i
 - **Kube Proxy:** Manages networking, IP addresses, and default load balancing.
 - **Container Runtime:** Manages the lifecycle of containers (e.g., containerd, cri-o).
 
-### Control Plane Components
 
-The control plane coordinates and manages the cluster. It includes:
-
-- **API Server:** Handles requests from users and external systems and manages the cluster's overall state.
-- **Scheduler:** Determines which worker node should run a Pod based on instructions from the API Server.
-- **Controller Manager:** Oversees controllers that maintain the desired state of the cluster. For example, the ReplicaSet Controller manages the number of Pod replicas.
-- **etcd:** A distributed key-value store that holds all cluster data and state.
-- **Cloud Controller Manager:** Integrates with cloud providers to manage cloud-specific resources such as load balancers, storage volumes, and virtual machines.
-
-## Why Do You Need a Control Plane When Everything is Provided by the Data Plane?
+### Why Do You Need a Control Plane When Everything is Provided by the Data Plane?
 
 For enterprise-level tools, there are specific standards that need to be met. One of these standards is the concept of clustering. The control plane in Kubernetes is essential for managing and orchestrating the cluster. It performs several crucial functions:
 
