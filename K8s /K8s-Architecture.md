@@ -1,4 +1,4 @@
-# What is a Pod in Kubernetes?
+## What is a Pod in Kubernetes?
 
 In Kubernetes, a Pod is the smallest deployable unit that groups one or more containers together. Containers within a Pod share:
 
@@ -7,7 +7,7 @@ In Kubernetes, a Pod is the smallest deployable unit that groups one or more con
 
 This setup ensures that containers that need to work closely together are placed on the same host, which simplifies their communication and data sharing.
 
-## Understanding Kubernetes Architecture Compared to Docker
+### Understanding Kubernetes Architecture Compared to Docker
 
 When running a container, you need a container runtime. In Docker, this runtime is referred to as Docker shim.
 
@@ -19,7 +19,7 @@ In Kubernetes, the architecture is slightly different:
 
 - **Container Runtime:** Kubernetes provides container runtimes such as `containerd` and `cri-o` to manage container execution. These runtimes handle the low-level operations required to run containers.
 
-## Kubernetes Architecture
+### Kubernetes Architecture
 
 Kubernetes (K8s) uses two types of nodes:
 
