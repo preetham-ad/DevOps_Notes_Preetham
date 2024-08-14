@@ -40,6 +40,6 @@ Kubernetes, often abbreviated as K8s, is an open-source platform designed for au
 
 - **Enterprise Features:** Docker is not used in production environments on its own. You can use Docker Swarm, but not Docker alone, because it does not provide enterprise-level support. K8s is a tool that originated from Google. Google used a specific tool called Borg, and K8s is considered a part of Borg. Google has built an enterprise-level container orchestration platform with K8s.
 
-## Does K8s Solve These Problems 100%?
+- ### Does K8s Solve These Problems 100%?
 
 - **Not Perfect:** In a nutshell, no. K8s does not solve these problems 100% perfectly. However, the Cloud Native Computing Foundation (CNCF) is working to make K8s a better solution.
