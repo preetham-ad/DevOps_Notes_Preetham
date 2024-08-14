@@ -42,7 +42,7 @@ As a DevOps engineer, you need to handle:
 - **Managing**: Overseeing the health and configuration of clusters.
 - **Deletions**: Safely removing clusters that are no longer needed.
 
-### Why KOPS Uses Storage Services like S3
+#### Why KOPS Uses Storage Services like S3
 
 - **State Storage**: KOPS uses storage services like S3 to persist cluster state and configuration data. This allows KOPS to maintain a consistent view of the cluster and facilitates operations such as upgrades and backups.
 - **Durability**: Cloud storage services provide high durability and availability, ensuring that cluster data is safe even in case of failures.
