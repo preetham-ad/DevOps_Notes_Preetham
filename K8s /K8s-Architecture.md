@@ -7,6 +7,9 @@ In Kubernetes, a Pod is the smallest deployable unit that groups one or more con
 
 This setup ensures that containers that need to work closely together are placed on the same host, which simplifies their communication and data sharing.
 
+### What is a cluster in k8s?
+ In Kubernetes cluster consists of multiple nodes, and each node runs pods that contain your containerized applications.
+
 ### Understanding Kubernetes Architecture Compared to Docker
 
 When running a container, you need a container runtime. In Docker, this runtime is referred to as Docker shim.
