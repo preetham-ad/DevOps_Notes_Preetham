@@ -21,7 +21,7 @@
 - **Definition**: A ReplicaSet ensures that a specified number of identical Pods are running at all times.
 - **Function**: It helps with self-healing by automatically replacing failed Pods. It also supports scaling through manual adjustments or integration with Horizontal Pod Autoscalers.
 
-###Summary
+### Summary
 In Kubernetes, using a Deployment resource rather than a Pod resource is generally recommended for deploying applications. Deployments provide additional features such as automated scaling, rolling updates, self-healing, and declarative management. This makes Deployments the preferred choice for managing production applications, offering greater resilience, flexibility, and ease of management.
 
 When you create a Deployment, it automatically creates a ReplicaSet. The ReplicaSet then manages and creates the required Pods, ensuring that the desired number of replicas are maintained and managed effectively. This hierarchical structure provides enhanced resilience and flexibility in managing application workloads.
