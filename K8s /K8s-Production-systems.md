@@ -5,7 +5,7 @@
 ### Development Environments
 - **Minikube**: Local Kubernetes cluster for development.
 - **k3s**: Lightweight Kubernetes for resource-constrained environments.
-- **kind**: Kubernetes IN Docker, for testing Kubernetes clusters.
+- **kIND**: Kubernetes IN Docker, for testing Kubernetes clusters.
 - **k3d**: k3s running in Docker containers.
 - **MicroK8s**: Lightweight Kubernetes for local development.
 
