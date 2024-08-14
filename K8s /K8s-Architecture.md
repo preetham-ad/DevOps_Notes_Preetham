@@ -1,4 +1,4 @@
-## What is a Pod in Kubernetes?
+### What is a Pod in Kubernetes?
 
 In Kubernetes, a Pod is the smallest deployable unit that groups one or more containers together. Containers within a Pod share:
 
