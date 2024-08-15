@@ -55,7 +55,7 @@ Kubernetes Services are essential for connecting Pods and managing network commu
 - **When to Use:** Best for applications needing high availability and can handle variable amounts of traffic, like a popular website or service.
 - **Why:** It provides a stable public IP address and automatically balances traffic to ensure your service stays available and responsive even under heavy load.
 
-## Neat Notes on Kubernetes Service Types
+## Summary on Kubernetes Service Types
 
 - **ClusterIP**
   - **Purpose:** Internal communication within the cluster.
