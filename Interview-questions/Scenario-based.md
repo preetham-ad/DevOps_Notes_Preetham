@@ -1,6 +1,6 @@
-# Scenario-Based Interview Questions and Answers
+## Scenario-Based Interview Questions and Answers
 
-## 1. Scenario: Troubleshooting a Kubernetes Deployment Issue
+### 1. Scenario: Troubleshooting a Kubernetes Deployment Issue
 
 **Question:**  
 You receive a ticket stating that a deployment is failing in the Kubernetes cluster. How would you approach troubleshooting this issue?
@@ -31,7 +31,7 @@ You receive a ticket stating that a deployment is failing in the Kubernetes clus
 8. **Coordinate with Teams:**
    - If needed, engage with the development or DevOps teams to discuss recent changes or issues that might be affecting the deployment.
 
-## 2. Scenario: Handling a High Traffic Situation
+### 2. Scenario: Handling a High Traffic Situation
 
 **Question:**  
 Your Kubernetes cluster is experiencing high traffic, and you notice that the application performance is degrading. What steps would you take to address this?
@@ -59,7 +59,7 @@ Your Kubernetes cluster is experiencing high traffic, and you notice that the ap
 7. **Review Logs and Metrics:**
    - Continuously monitor logs and metrics to ensure that scaling and optimization efforts are effective.
 
-## 3. Scenario: Diagnosing a Security Incident
+### 3. Scenario: Diagnosing a Security Incident
 
 **Question:**  
 You receive an alert about a potential security incident involving a Kubernetes pod. How would you respond to and resolve this situation?
@@ -90,7 +90,7 @@ You receive an alert about a potential security incident involving a Kubernetes 
 8. **Review and Improve Security Posture:**
    - Conduct a post-incident review to identify any gaps in security and improve your overall security posture.
 
-## 4. Scenario: Automating CI/CD Pipeline
+### 4. Scenario: Automating CI/CD Pipeline
 
 **Question:**  
 You need to implement a CI/CD pipeline for a new application using Jenkins. What steps would you follow to set up and automate the pipeline?
@@ -124,7 +124,7 @@ You need to implement a CI/CD pipeline for a new application using Jenkins. What
 9. **Document Pipeline:**
    - Document the pipeline setup, configuration, and any troubleshooting steps for future reference.
 
-## 5. Scenario: Supporting a Java Application
+### 5. Scenario: Supporting a Java Application
 
 **Question:**  
 Your team is deploying a Java application running on Tomcat in Kubernetes. What considerations and steps would you take to support this deployment?
