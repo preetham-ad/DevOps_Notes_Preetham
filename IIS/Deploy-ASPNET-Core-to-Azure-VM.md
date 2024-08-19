@@ -1,5 +1,5 @@
 # Deploy ASP.NET Core Website to Azure VM | IIS
-
+## Note: Select the VM size Standard DS1 v2 (1 vCPU, 3.5 GiB memory); otherwise, IIS will not be installed.
 ## Prerequisites
 
 Before performing this project, ensure you have:
