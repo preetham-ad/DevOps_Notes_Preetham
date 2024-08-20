@@ -14,11 +14,14 @@ Both web servers and virtual machines are called "servers" because they provide 
 
 The term "server" in both contexts means that these systems are providing resources or services to other systems or users, but the specific type of service they offer is what distinguishes them.
 
-# What is IIS?
+## What is IIS?
 
 IIS (Internet Information Services) is a web server from Microsoft that helps run and manage websites and web apps on Windows computers. It handles requests from users who want to visit your site and makes sure everything runs smoothly.
 
-# What is IIS Configuration Management?
+## What is Configuration Management?
+Configuration management involves keeping track of how a machine or system is set up and ensuring it stays that way. It’s like maintaining a detailed list of how you like your kitchen organized, so it’s set up just how you like it.
+
+## What is IIS Configuration Management?
  IIS Configuration Management is about setting up and managing the various settings and files that control how your web server operates, ensuring it runs efficiently and securely while hosting your websites and applications. 
 
 Here’s a simplified explanation of what happens under the hood with IIS configuration management:
