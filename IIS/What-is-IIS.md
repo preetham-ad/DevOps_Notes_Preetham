@@ -19,6 +19,7 @@ The term "server" in both contexts means that these systems are providing resour
 IIS (Internet Information Services) is a web server from Microsoft that helps run and manage websites and web apps on Windows computers. It handles requests from users who want to visit your site and makes sure everything runs smoothly.
 
 # What is IIS Configuration Management?
+ IIS Configuration Management is about setting up and managing the various settings and files that control how your web server operates, ensuring it runs efficiently and securely while hosting your websites and applications. 
 
 Here’s a simplified explanation of what happens under the hood with IIS configuration management:
 
