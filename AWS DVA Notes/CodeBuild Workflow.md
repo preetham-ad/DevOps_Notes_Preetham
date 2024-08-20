@@ -13,17 +13,6 @@
 3. **Artifacts and Logs:**
    - After the build process, CodeBuild stores the build artifacts (the results of the build) and logs for review.
 
-### Simplified Explanation
-
-1. **Source Stage:**
-   - CodeBuild fetches the latest version of your code from your repository.
-
-2. **Build Execution:**
-   - It follows the "recipe" provided in the `buildspec.yml` file to compile and test your code.
-
-3. **Artifacts and Logs:**
-   - Once the build is done, it saves the results and logs so you can check if everything worked as expected.
-
 ## CodeBuild Project
 
 ### Official Documentation Overview
