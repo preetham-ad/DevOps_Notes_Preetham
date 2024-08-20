@@ -1,4 +1,4 @@
-# Configuration of IIS
+## Configuration of IIS
 
 ## Steps
 
