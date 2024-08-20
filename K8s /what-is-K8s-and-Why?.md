@@ -42,4 +42,4 @@ Kubernetes, often abbreviated as K8s, is an open-source platform designed for au
 
 - ### Does K8s Solve These Problems 100%?
 
-- **Not Perfect:** In a nutshell, no. K8s does not solve these problems 100% perfectly. However, the Cloud Native Computing Foundation (CNCF) is working to make K8s a better solution.
+- **Not Perfect:** In a nutshell, No. K8s does not solve these problems 100% perfectly. However, the Cloud Native Computing Foundation (CNCF) is working to make K8s a better solution.
