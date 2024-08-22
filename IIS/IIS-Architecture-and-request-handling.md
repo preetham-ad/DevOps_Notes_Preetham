@@ -1,3 +1,6 @@
+![IIS Architecture](https://github.com/preetham-ad/DevOps_Notes_Preetham/blob/main/IIS-Architecture.png
+)
+
 # IIS Architecture and Request Handling
 
 ## Overview
