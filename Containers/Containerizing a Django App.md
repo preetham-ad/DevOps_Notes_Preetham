@@ -4,6 +4,8 @@
 
 Containerizing a Django app involves several steps to ensure that the application runs consistently across different environments. This guide provides a structured explanation of the basic workflow for application development and highlights why Docker containers are essential in modern development processes.
 
+### Django is like a toolkit for building websites and web applications quickly and efficiently. It handles the "behind-the-scenes" work that websites need to do, such as storing and retrieving data, handling user logins, and ensuring everything runs smoothly.
+
 ## Basic Application Workflow
 
 ### 1. Create a Django Application
