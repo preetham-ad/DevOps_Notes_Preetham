@@ -145,11 +145,11 @@ Run the container and map port 8000 from the container to your local machine:
 ```bash
 docker run -d -p 8000:8000 my-django-app
 ```
-# Understanding Docker Port Mapping
+### Understanding Docker Port Mapping
 
 Port mapping is a way to connect the ports of your Docker container to ports on your local machine (or host machine) so you can interact with services running inside the container. Below is a detailed explanation of why it's needed and what it does:
 
-## Why Port Mapping is Required
+### Why Port Mapping is Required
 
 1. **Container Isolation**:
    Docker containers run in their own isolated environments. Services running inside a container are not directly accessible from the outside world or from the host machine unless explicitly configured.
@@ -157,7 +157,7 @@ Port mapping is a way to connect the ports of your Docker container to ports on 
 2. **Accessing Services**:
    If your application inside the container is running a web server on port 8000, you need a way to access this web server from your host machine. Port mapping allows you to expose the container’s port to your host machine.
 
-## What Port Mapping Does
+### What Port Mapping Does
 
 - **`-p 8000:8000`**:
   This flag tells Docker to map port 8000 of the container to port 8000 of your local machine.
@@ -166,7 +166,7 @@ Port mapping is a way to connect the ports of your Docker container to ports on 
 
   - **`8000` (second part)**: This is the port number inside the Docker container where your application or service is actually running.
 
-## Example
+### Example
 
 Let’s say you have a Django application running inside a Docker container, and it listens on port 8000 inside the container.
 
@@ -174,7 +174,7 @@ Let’s say you have a Django application running inside a Docker container, and
 
 - You can then open a web browser and go to `http://localhost:8000` to see your Django application, because port 8000 on your local machine is now forwarding traffic to port 8000 inside the container.
 
-## Summary
+### Summary
 
 Port mapping allows you to expose and access the services running inside a Docker container from outside the container, making it easier to interact with and test your application.
 
