@@ -37,23 +37,23 @@ Find and select your EC2 instance.
 Click on the Security tab.
 Edit the inbound rules of the security group to allow HTTP traffic on port 80.
 
-# Port 80 Overview
+### Port 80 Overview
 
 Port 80 is the default port used by the Hypertext Transfer Protocol (HTTP) for web traffic. Below is an explanation of its purpose and usage.
 
-## **Protocol**
+### **Protocol**
 
 - **HTTP**: Port 80 is used for HTTP connections, which are responsible for transferring web pages and related content over the internet.
 
-## **Usage**
+### **Usage**
 
 - **Web Traffic**: Port 80 is commonly used to serve web pages. When you enter a URL into your web browser without specifying a port number, it defaults to port 80 for HTTP traffic.
 
-## **Purpose**
+### **Purpose**
 
 - **Web Servers**: Port 80 allows web servers to communicate with web browsers and other clients to deliver content such as HTML pages, images, and other resources.
 
-## **Example**
+### **Example**
 
 - **Web Server Configuration**: A web server (e.g., Apache, Nginx) configured to listen on port 80 will handle incoming HTTP requests on that port.
 - **Accessing Websites**: Visiting a website by entering `http://example.com` in a browser will connect to the web server at `example.com` on port 80 by default.
