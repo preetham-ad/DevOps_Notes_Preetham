@@ -6,7 +6,7 @@ Containerizing a Django app involves several steps to ensure that the applicatio
 
 ### Django is like a toolkit for building websites and web applications quickly and efficiently. It handles the "behind-the-scenes" work that websites need to do, such as storing and retrieving data, handling user logins, and ensuring everything runs smoothly.
 
-## Both .NET and Django are frameworks used to build web applications, but they differ in several key ways:
+#### Both .NET and Django are frameworks used to build web applications, but they differ in several key ways:
 
 1. Programming Language:
 Django: Written in Python. It's a Python-based web framework.
