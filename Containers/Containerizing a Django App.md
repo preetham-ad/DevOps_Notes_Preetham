@@ -20,6 +20,8 @@ Containerizing a Django app involves several steps to ensure that the applicatio
 
 ### 1. Create a Django Application
 
+- A Django application is a part of a Django project that handles a specific feature or function of a website. It's like a reusable building block containing all the code and resources needed for that feature.
+
 **a. Install Django**
 
 First, you need to set up your environment. Install Python and Django:
